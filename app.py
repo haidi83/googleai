@@ -29,7 +29,7 @@ if url:
     st.image(image)
 
     result = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
+        model="gemini-3.5-flash-lite",
         contents=[image, "What is the main thing in this image? Reply with just its name, a few words at most."],
     )
     st.success(result.text)
